@@ -129,4 +129,4 @@ console.log(result.text, result.sessionId);
 
 ## 许可证
 
-MIT
+见仓库根目录 [LICENSE](LICENSE)（MIT）。
