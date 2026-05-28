@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cc-worker Gateway</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/github-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/github.min.css"
+      media="(prefers-color-scheme: light)"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1>cc-worker</h1>
+          <p class="tagline">Claude Code Gateway</p>
+        </div>
+        <nav class="nav" id="nav">
+          <button type="button" data-view="overview" class="nav-item active">概览</button>
+          <button type="button" data-view="chat" class="nav-item">对话</button>
+          <button type="button" data-view="skills" class="nav-item">技能</button>
+          <button type="button" data-view="api" class="nav-item">API</button>
+        </nav>
+        <div class="sidebar-footer">
+          <button type="button" id="btn-refresh" class="btn ghost">刷新状态</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h2 id="view-title">概览</h2>
+          <div id="global-status" class="badges"></div>
+        </header>
+
+        <section id="view-overview" class="view active"></section>
+        <section id="view-chat" class="view"></section>
+        <section id="view-skills" class="view"></section>
+        <section id="view-api" class="view"></section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/lib/highlight.min.js"></script>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
